@@ -1,0 +1,20 @@
+{
+  "name": "creator-avatar-delivery",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/avatar_service.ts",
+    "example": "tsx src/run_avatar_pipeline.ts",
+    "test": "tsx --test test/avatar_pipeline.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^4.1.5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}

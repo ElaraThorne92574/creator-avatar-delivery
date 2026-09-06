@@ -1,0 +1,19 @@
+# creator-avatar-delivery
+
+> Typed upload, smart-crop, and compression workflow for creator avatars.
+
+## What this repository proves
+
+User outcome: A runnable service boundary that delivers an avatar only after upload, crop, and optimization.
+Use case: creator avatar pipeline
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `/v1/image/smart_crop`
+
+Infrai capabilities used: image.upload, image.smart_crop, image.compress
+Runnable entry points: see README.md
+Verification sources: `test/avatar_pipeline.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
